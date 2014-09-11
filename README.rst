@@ -15,3 +15,11 @@ Mettre dans .bashrc :
 .. code-block::
 
    export TERM='xterm-256color'
+
+
+Git
+===
+
+.. code-block::
+
+   git config --global push.default simple
