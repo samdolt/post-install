@@ -26,8 +26,16 @@ Console
 Git
 ===
 
-.. code-block::
+.. code-block:: sh
 
    git config --global user.name "Samuel Dolt"
    git config --global user.email samuel@dolt.ch
    git config --global push.default simple
+
+Vim
+===
+
+.. code-block:: sh
+
+   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+   
