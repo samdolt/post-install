@@ -83,5 +83,11 @@ Paramètrage généraux
 .. code-block:: sh
 
    dconf write /org/gnome/desktop/background "'/usr/share/backgrounds/The Coast.jpg'"
+
+Firefox
+=======
+
+Thème Elementary: https://addons.mozilla.org/fr/firefox/addon/elementary-firefox/
+
    
    
