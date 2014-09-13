@@ -78,6 +78,6 @@ set background=dark
 colorscheme solarized
 
 " Change la police
-set guifont=DejaVu\ Sans\ Mono\ 10
+set guifont=Droid\ Sans\ Mono\ 10
 set antialias
 
