@@ -38,6 +38,16 @@ Configuration de git
    git config --global user.email samuel@dolt.ch
    git config --global push.default simple
 
+Récupération des dépots githubs
+
+.. code-block:: sh
+
+   wget https://raw.githubusercontent.com/samdolt/post-install/master/github-user-repo.sh
+   chmod +x github-user-repo.sh
+   ./github-user-repo.sh samdolt
+   ./github-user-repo.sh elementary-fr
+   
+
 Vim
 ===
 
