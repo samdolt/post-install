@@ -13,7 +13,8 @@ Les indispensables
    sudo apt install firefox firefox-locale-fr \
                     vim-gnome build-essential \
                     valac libgtk-3-dev git bzr \
-                    zsh dconf-editor
+                    zsh dconf-editor \
+                    ubuntu-restricted-extras
 
 Console
 ========
@@ -88,6 +89,19 @@ Firefox
 =======
 
 Thème Elementary: https://addons.mozilla.org/fr/firefox/addon/elementary-firefox/
+
+Pipelight pour prise en charge Silverlight et Flash. Attention, il faut fermet Firefox lors
+de l'install des plugins (trois dernières lignes).
+
+.. code-block:: sh
+
+  sudo add-apt-repository ppa:pipelight/stable
+  sudo apt-get update
+  sudo apt-get install --install-recommends pipelight-multi
+  sudo pipelight-plugin --update
+  sudo pipelight-plugin --enable flash
+  sudo pipelight-plugin --enable silverlight
+   
 
    
    
