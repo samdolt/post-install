@@ -59,4 +59,11 @@ Thème solarized dark pour Pantheon-terminal. Requis par le thème solarized de 
    chmod +x terminal_color_scheme
    ./terminal_color_scheme dark
    
+Paramètrage de Scratch
+======================
+
+.. code-block:: sh
+
+   dconf write /org/pantheon/scratch.settings/style-scheme "'solarizeddark'"
+   
    
