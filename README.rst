@@ -104,20 +104,20 @@ de l'install des plugins (trois dernières lignes).
   sudo pipelight-plugin --enable silverlight
  
  
- Mis à jour des logiciels Gnome 3
- =================================
+Mis à jour des logiciels Gnome 3
+=================================
  
- Pour utiliser une version récente des logiciels Gnome, avec la header bar, il faut rajouter
- temporairement le dépot Gnome 3 Staging. 
+Pour utiliser une version récente des logiciels Gnome, avec la header bar, il faut rajouter
+temporairement le dépot Gnome 3 Staging. 
  
- .. code-block:: sh
+.. code-block:: sh
  
    sudo apt-add-repository ppa:gnome3-team/gnome3-staging 
    sudo apt update
    sudo apt install gitg
    sudo apt-add-repository -r ppa:gnome3-team/gnome3-staging
 
-/!\ Les logiciels peuvent être instable, et ne seront pas mis à jour
+.. note:: Les logiciels peuvent être instable, et ne seront pas mis à jour
    
 
    
