@@ -83,7 +83,8 @@ Paramètrage généraux
 
 .. code-block:: sh
 
-   dconf write /org/gnome/desktop/background "'/usr/share/backgrounds/The Coast.jpg'"
+   dconf write /org/gnome/desktop/background/picture-uri "'/usr/share/backgrounds/The Coast.jpg'"
+
 
 Firefox
 =======
