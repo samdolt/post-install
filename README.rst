@@ -12,7 +12,8 @@ Les indispensables
 
    sudo apt install firefox firefox-locale-fr \
                     vim-gnome build-essential \
-                    valac libgtk-3-dev git bzr zsh
+                    valac libgtk-3-dev git bzr \
+                    zsh dconf-editor
 
 Console
 ========
