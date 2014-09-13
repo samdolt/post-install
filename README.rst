@@ -3,18 +3,24 @@ post-install
 
 Linux Post-instal
 
+Logiciels
+=========
 
-Vim
-======
+.. code-block:: sh
 
-Pour le terminal XCFE :
-http://vim.wikia.com/wiki/256_colors_in_vim
+   sudo apt install firefox firefox-locale-fr \
+                    vim-gnome build-essential \
+                    valac libgtk-3-dev git bzr zsh
 
-Mettre dans .bashrc :
+Console
+========
 
-.. code-block::
+.. code-block:: sh
 
-   export TERM='xterm-256color'
+   chsh -s /bin/zsh
+   curl -L http://install.ohmyz.sh | sh
+   # Changement du thème de robbyrussell à ys
+   sed -i 's/robbyrussell/ys/' ~/.zshrc 
 
 
 Git
@@ -22,4 +28,6 @@ Git
 
 .. code-block::
 
+   git config --global user.name "Samuel Dolt"
+   git config --global user.email samuel@dolt.ch
    git config --global push.default simple
