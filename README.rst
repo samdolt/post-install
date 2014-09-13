@@ -65,5 +65,12 @@ Paramètrage de Scratch
 .. code-block:: sh
 
    dconf write /org/pantheon/scratch.settings/style-scheme "'solarizeddark'"
+
+Paramètrage généraux
+====================
+
+.. code-block:: sh
+
+   dconf write /org/gnome/desktop/background "'/usr/share/backgrounds/The Coast.jpg'"
    
    
