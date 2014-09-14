@@ -181,6 +181,19 @@ temporairement le dépot Gnome 3 Staging.
    sudo apt-add-repository -r ppa:gnome3-team/gnome3-staging
 
 .. note:: Les logiciels peuvent être instable, et ne seront pas mis à jour
+
+
+LibreOffice
+===========
+
+.. code-block:: sh
+   
+   sudo apt-get install libreoffice-nlpsolver libreoffice-presenter-console \
+                        libreoffice-pdfimport libreoffice-presentation-minimizer \
+                        libreoffice-wiki-publisherlibreoffice-help-fr \
+                        libreoffice-l10n-fr libreoffice
+
+Correction grammatical: https://www.languagetool.org/
    
 
    
