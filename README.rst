@@ -190,7 +190,7 @@ LibreOffice
    
    sudo apt-get install libreoffice-nlpsolver libreoffice-presenter-console \
                         libreoffice-pdfimport libreoffice-presentation-minimizer \
-                        libreoffice-wiki-publisherlibreoffice-help-fr \
+                        libreoffice-wiki-publisher libreoffice-help-fr \
                         libreoffice-l10n-fr libreoffice
 
 Correction grammatical: https://www.languagetool.org/
