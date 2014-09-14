@@ -94,10 +94,21 @@ Correction orthographique: http://blog.fedora-fr.org/metal3d/post/Correction-ort
 
    mkdir -p ~/.vim/spell
    cd ~/.vim/spell
-   wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
-   wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
    wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
    wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+   wget http://ftp.vim.org/vim/runtime/spell/en.utf-8.spl
+   wget http://ftp.vim.org/vim/runtime/spell/en.utf-8.sug
+   wget http://ftp.vim.org/vim/runtime/spell/de.utf-8.spl
+   wget http://ftp.vim.org/vim/runtime/spell/de.utf-8.sug
+
+Changement de la langue :
+
+.. code-block: text
+
+   :set spelllang fr
+   :set spell " Activation du correcteur
+   :LanguageToolCheck
+   :LanguageToolClean
 
 Correction grammatical :
 Plugin : http://www.vim.org/scripts/script.php?script_id=3223
