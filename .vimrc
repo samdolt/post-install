@@ -64,6 +64,9 @@ set showmatch " Met en évidence les symboles [{()}] correspondant
 set listchars=tab:»\ ,trail:·
 set list
 
+" Correction orthographique
+set spelllang=fr
+let g:languagetool_jar='~/.vim/LanguageTool-2.6/languagetool-commandline.jar'
 " -- Recherche
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
