@@ -15,7 +15,7 @@ Les indispensables
                     valac libgtk-3-dev git bzr \
                     zsh dconf-editor \
                     ubuntu-restricted-extras \
-                    git-flow
+                    git-flow default-jre
 
 Console
 ========
@@ -87,7 +87,32 @@ Vim
    cd $HOME && https://github.com/samdolt/post-install/raw/master/.vimrc
    vim +PluginInstall +qall
    echo "export TERM='xterm-256color'" >>  .zshrc
-   
+
+Correction orthographique: http://blog.fedora-fr.org/metal3d/post/Correction-orthographique-et-grammaticale-avec-Vim
+
+.. code-block:: sh
+
+   mkdir -p ~/.vim/spell
+   cd ~/.vim/spell
+   wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
+   wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+   wget http://ftp.vim.org/vim/runtime/spell/en.utf-8.spl
+   wget http://ftp.vim.org/vim/runtime/spell/en.utf-8.sug
+   wget http://ftp.vim.org/vim/runtime/spell/de.utf-8.spl
+   wget http://ftp.vim.org/vim/runtime/spell/de.utf-8.sug
+
+Changement de la langue :
+
+.. code-block: text
+
+   :set spelllang fr
+   :set spell " Activation du correcteur
+   :LanguageToolCheck
+   :LanguageToolClean
+
+Correction grammatical :
+Plugin : http://www.vim.org/scripts/script.php?script_id=3223
+
 Pantheon Terminal
 =================
 
