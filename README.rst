@@ -150,6 +150,10 @@ Firefox
 
 Thème Elementary: https://addons.mozilla.org/fr/firefox/addon/elementary-firefox/
 
+Correction grammaticale: https://www.languagetool.org/
+
+Dictionnaire en français: https://addons.mozilla.org/fr/firefox/addon/dictionnaires-fran%C3%A7ais/
+
 Pipelight pour prise en charge Silverlight et Flash. Attention, il faut fermet Firefox lors
 de l'install des plugins (trois dernières lignes).
 
