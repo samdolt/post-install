@@ -117,6 +117,8 @@ else
     set clipboard=unnamedplus
 endif
 
+set mouse=a
+
 " GVim Option
 :set guioptions-=T " Remove toolbar
 " :set guioptions-=m "Remove menu bar
