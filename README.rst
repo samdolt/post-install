@@ -26,7 +26,11 @@ Utilisation de Zsh avec les prompts de Oh My Zsh:
    chsh -s /bin/zsh
    curl -L http://install.ohmyz.sh | sh
    # Changement du thème de robbyrussell à ys
-   sed -i 's/robbyrussell/ys/' ~/.zshrc
+   cd ~/.oh-my-zsh/themes/
+   wget https://raw.githubusercontent.com/samdolt/post-install/master/custom.zsh-theme
+   cd $HOME
+   sed -i 's/robbyrussell/custom/' ~/.zshrc
+
 
 Git
 ===
