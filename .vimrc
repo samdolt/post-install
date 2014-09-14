@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/vim-auto-save'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -26,7 +27,11 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
+" -- Tabulation
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tabstop=4 " Un charactère tab fait 4 espaces de long
+set softtabstop=4 " Utilise 4 espace au lieu d'une tab en édition
+set expandtab " Utilise softtab au lieu des tabs
 
 " -- Affichage
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -39,8 +44,25 @@ set ruler " Affiche la position actuelle du curseur
 set wrap " Affiche les lignes trop longues sur plusieurs
 " lignes
 
+nnoremap j gj
+nnoremap k gk
+" Saut de ligne visuel, en cas de wrap, le passage à la ligne suivante
+" saute pas la partie wrappée
+
 set scrolloff=3 " Affiche un minimum de 3 lignes autour du curseur
 " (pour le scroll)
+
+set showcmd " Affiche la dernière commande en bas
+
+set cursorline " Met en évidence la ligne en cours
+
+set wildmenu " Autocompletition de commande
+
+set showmatch " Met en évidence les symboles [{()}] correspondant
+
+" show whitespace
+set listchars=tab:»\ ,trail:·
+set list
 
 " -- Recherche
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -71,7 +93,7 @@ syntax enable
 " la syntaxe et l'indentation
 filetype on
 filetype plugin on
-filetype indent on
+filetype indent on " Load specific filetype indent information
 
 " Utilise la version sombre de Solarized
 set background=dark
@@ -81,3 +103,23 @@ colorscheme solarized
 set guifont=Droid\ Sans\ Mono\ 10
 set antialias
 
+" Active la sauvegarde automatique
+let g:auto_save = 1  " enable AutoSave on Vim startup
+
+" Désactivation de la sauvegarde dans les fichiers temporaires
+set nobackup
+set noswapfile
+
+" Copier coller depuis le presse papier système
+if has("win32unix")
+    set clipboard=unnamed
+else
+    set clipboard=unnamedplus
+endif
+
+" GVim Option
+:set guioptions-=T " Remove toolbar
+" :set guioptions-=m "Remove menu bar
+:set guioptions-=r " RIgh-hand scroll bar
+:set guioptions-=L " Left scroll bar
+":let g:solarized_hitrail=(abs(g:solarized_hitrail-1)) | colorscheme solarized
