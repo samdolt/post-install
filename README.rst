@@ -56,6 +56,16 @@ Configuration de git
    git config --global user.name "Samuel Dolt"
    git config --global user.email samuel@dolt.ch
    git config --global push.default simple
+   git config --global credential.helper cache
+
+Intégration de git à Gnome Keyring :
+
+.. code-block:: sh
+
+   sudo apt-get install libgnome-keyring-dev
+   sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
+   git config --global credential.helper /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+
 
 Récupération des dépots githubs dans ~/Projets/
 
