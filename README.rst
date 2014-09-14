@@ -31,6 +31,19 @@ Utilisation de Zsh avec les prompts de Oh My Zsh:
    cd $HOME
    sed -i 's/robbyrussell/custom/' ~/.zshrc
 
+Ajout de la coloration syntactique
+
+.. code-block:: sh
+
+   cd ~/.oh-my-zsh/custom/plugins
+   git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+
+Puis ajout :
+
+.. code-block:: text
+
+   plugins=( [plugins...] zsh-syntax-highlighting) # zsh-syntax-highlighting must be at the end
+
 
 Git
 ===
