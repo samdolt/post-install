@@ -43,7 +43,7 @@ Puis ajout :
 
 .. code-block:: text
 
-   plugins=( [plugins...] zsh-syntax-highlighting) # zsh-syntax-highlighting must be at the end
+   plugins=( git git-flow zsh-syntax-highlighting) # zsh-syntax-highlighting must be at the end
 
 
 Git
