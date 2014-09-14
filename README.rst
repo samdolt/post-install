@@ -194,6 +194,8 @@ LibreOffice
                         libreoffice-l10n-fr libreoffice
 
 Correction grammatical: https://www.languagetool.org/
+
+Dictionnaire français: http://extensions.libreoffice.org/extension-center/dictionnaires-francais
    
 
    
