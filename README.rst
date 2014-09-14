@@ -14,7 +14,8 @@ Les indispensables
                     vim-gnome build-essential \
                     valac libgtk-3-dev git bzr \
                     zsh dconf-editor \
-                    ubuntu-restricted-extras
+                    ubuntu-restricted-extras \
+                    git-flow
 
 Console
 ========
