@@ -101,6 +101,14 @@ Correction orthographique: http://blog.fedora-fr.org/metal3d/post/Correction-ort
    wget http://ftp.vim.org/vim/runtime/spell/de.utf-8.spl
    wget http://ftp.vim.org/vim/runtime/spell/de.utf-8.sug
 
+Correction grammatical :
+Plugin : http://www.vim.org/scripts/script.php?script_id=3223
+
+1. Télécharger le plugin VIM et dézipper dans ~/.vim
+2. Télécharger le logiciel LanguageTools et désipper dans ~/.vim
+3. Vérifier le path dans .vimrc, au niveau du numéro de version
+
+   
 Changement de la langue :
 
 .. code-block: text
@@ -108,10 +116,8 @@ Changement de la langue :
    :set spelllang fr
    :set spell " Activation du correcteur
    :LanguageToolCheck
-   :LanguageToolClean
 
-Correction grammatical :
-Plugin : http://www.vim.org/scripts/script.php?script_id=3223
+
 
 Pantheon Terminal
 =================
