@@ -111,7 +111,7 @@ Plugin : http://www.vim.org/scripts/script.php?script_id=3223
    
 Changement de la langue :
 
-.. code-block: text
+.. code-block:: vim
 
    :set spelllang fr
    :set spell " Activation du correcteur
