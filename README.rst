@@ -15,7 +15,7 @@ Les indispensables
                     valac libgtk-3-dev git bzr \
                     zsh dconf-editor \
                     ubuntu-restricted-extras \
-                    git-flow default-jre
+                    git-flow default-jre curl
 
 Console
 ========
