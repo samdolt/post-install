@@ -84,7 +84,7 @@ Vim
 .. code-block:: sh
 
    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-   cd $HOME && https://github.com/samdolt/post-install/raw/master/.vimrc
+   cd $HOME && wget https://github.com/samdolt/post-install/raw/master/.vimrc
    vim +PluginInstall +qall
    echo "export TERM='xterm-256color'" >>  .zshrc
 
