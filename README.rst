@@ -76,7 +76,14 @@ Récupération des dépots githubs dans ~/Projets/
    chmod +x github-user-repo.sh
    ./github-user-repo.sh samdolt
    ./github-user-repo.sh elementary-fr
-   
+
+Bazaar
+======
+
+.. code-block:: sh
+
+   bzr whoami "Samuel Dolt <samuel@dolt.ch>"
+   bzr launchpad-login samuel-dolt
 
 Vim
 ===
