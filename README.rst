@@ -85,6 +85,15 @@ Bazaar
    bzr whoami "Samuel Dolt <samuel@dolt.ch>"
    bzr launchpad-login samuel-dolt
 
+Il faut encore configurer la clef publique SSH sur Launchpad:
+
+.. code-block:: sh
+
+   ssh-keygen -t rsa
+   cat ~/.ssh/id_rsa.pub
+
+https://launchpad.net/~samuel-dolt/+editsshkeys
+
 Vim
 ===
 
