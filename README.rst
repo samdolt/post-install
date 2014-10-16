@@ -160,6 +160,14 @@ Paramètrage généraux
 
    dconf write /org/gnome/desktop/background/picture-uri "'/usr/share/backgrounds/The Coast.jpg'"
 
+Thème d'icone Captiva:
+
+.. code-block:: sh
+
+   sudo add-apt-repository ppa:captiva/ppa
+   sudo apt-get update
+   sudo apt-get install captiva-icon-theme
+   dconf write /org/gnome/desktop/interface/icon-theme "Captiva"
 
 Firefox
 =======
