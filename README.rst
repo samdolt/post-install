@@ -167,7 +167,7 @@ Thème d'icone Captiva:
    sudo add-apt-repository ppa:captiva/ppa
    sudo apt-get update
    sudo apt-get install captiva-icon-theme
-   dconf write /org/gnome/desktop/interface/icon-theme "Captiva"
+   dconf write /org/gnome/desktop/interface/icon-theme "'Captiva'"
 
 Firefox
 =======
