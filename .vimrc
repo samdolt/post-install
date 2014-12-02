@@ -67,7 +67,8 @@ set listchars=tab:»\ ,trail:·
 set list
 
 " Correction orthographique
-set spelllang=fr
+set spelllang=en
+set spell
 let g:languagetool_jar='~/.vim/LanguageTool-2.6/languagetool-commandline.jar'
 " -- Recherche
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -140,3 +141,10 @@ set mouse=a
 :set guioptions-=r " RIgh-hand scroll bar
 :set guioptions-=L " Left scroll bar
 ":let g:solarized_hitrail=(abs(g:solarized_hitrail-1)) | colorscheme solarized
+
+
+
+" Correction de la syntaxe à l'ouverture
+let g:syntastic_check_on_open=1
+" Affichage de toutes les erreurs
+let g:syntastic_aggregate_errors = 1
