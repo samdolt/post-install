@@ -129,7 +129,7 @@ Changement de la langue :
 
 .. code-block:: vim
 
-   :set spelllang fr
+   :set spelllang=fr
    :set spell " Activation du correcteur
    :LanguageToolCheck
 
