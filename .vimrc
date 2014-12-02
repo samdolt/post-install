@@ -44,6 +44,7 @@ set number " Affiche le numero des lignes
 set ruler " Affiche la position actuelle du curseur
 set wrap " Affiche les lignes trop longues sur plusieurs
 " lignes
+set cc=80 " Affiche une règle à la colonne 80
 
 nnoremap j gj
 nnoremap k gk
@@ -120,6 +121,16 @@ if has("win32unix")
 else
     set clipboard=unnamedplus
 endif
+
+" Desactiver les touches directionnelles
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 set mouse=a
 
