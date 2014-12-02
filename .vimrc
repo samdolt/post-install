@@ -148,3 +148,5 @@ set mouse=a
 let g:syntastic_check_on_open=1
 " Affichage de toutes les erreurs
 let g:syntastic_aggregate_errors = 1
+" Utilisation de prospector pour la correction du python
+let g:syntastic_python_checkers = ['prospector']
