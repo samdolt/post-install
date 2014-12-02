@@ -133,7 +133,11 @@ Changement de la langue :
    :set spell " Activation du correcteur
    :LanguageToolCheck
 
+Afficher la liste des erreurs du correcteur de syntax:
 
+.. code-block:: vim
+
+   :Error
 
 Pantheon Terminal
 =================
