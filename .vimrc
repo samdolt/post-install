@@ -152,3 +152,4 @@ let g:syntastic_aggregate_errors = 1
 " Utilisation de prospector pour la correction du python
 let g:syntastic_python_checkers = ['prospector']
 let g:syntastic_python_prospector_args = "--strictness veryhigh"
+let g:syntastic_rst_checkers = ['rstcheck']
