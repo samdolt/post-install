@@ -15,7 +15,8 @@ Les indispensables
                     valac libgtk-3-dev git bzr \
                     zsh dconf-editor \
                     ubuntu-restricted-extras \
-                    git-flow default-jre curl
+                    git-flow default-jre curl \
+                    python-dev libclang1 cmake
 
 Console
 ========
@@ -103,6 +104,10 @@ Vim
    cd $HOME && wget https://github.com/samdolt/post-install/raw/master/.vimrc
    vim +PluginInstall +qall
    echo "export TERM='xterm-256color'" >>  .zshrc
+   
+   cd ~/.vim/bundle/YouCompleteMe
+   ./install.sh --clang-completer
+   cd
 
 Correction orthographique: http://blog.fedora-fr.org/metal3d/post/Correction-orthographique-et-grammaticale-avec-Vim
 
