@@ -16,13 +16,16 @@ Les indispensables
                     zsh dconf-editor \
                     ubuntu-restricted-extras \
                     git-flow default-jre curl \
-                    python-dev libclang1 cmake
+                    python-dev libclang1 cmake \
+                    libgnome-keyring-dev
                     
 ou sur Fedora:
 
 .. code-block:: sh
 
-   sudo dnf install firefox vim-enhanced valac zsh git bzr git-flow curl cmake
+   sudo dnf install firefox vim-enhanced valac zsh \
+                    git bzr git-flow curl cmake    \
+                    gtk3-devel glib2-devel
 
 Console
 ========
@@ -71,7 +74,6 @@ Intégration de git à Gnome Keyring :
 
 .. code-block:: sh
 
-   sudo apt-get install libgnome-keyring-dev
    sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
    git config --global credential.helper /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
 
@@ -111,7 +113,6 @@ Vim
    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
    cd $HOME && wget https://github.com/samdolt/post-install/raw/master/.vimrc
    vim +PluginInstall +qall
-   echo "export TERM='xterm-256color'" >>  .zshrc
    
    cd ~/.vim/bundle/YouCompleteMe
    ./install.sh --clang-completer
@@ -152,8 +153,15 @@ Afficher la liste des erreurs du correcteur de syntax:
 
    :Error
 
+Gnome 3 / Fedora
+================
+
+
+Elementary OS
+=============
+
 Pantheon Terminal
-=================
+-----------------
 
 Thème solarized dark pour Pantheon-terminal. Requis par le thème solarized de Vim.
 
@@ -164,14 +172,14 @@ Thème solarized dark pour Pantheon-terminal. Requis par le thème solarized de 
    ./terminal_color_scheme dark
    
 Paramètrage de Scratch
-======================
+----------------------
 
 .. code-block:: sh
 
    dconf write /org/pantheon/scratch.settings/style-scheme "'solarizeddark'"
 
 Paramètrage généraux
-====================
+-------------------
 
 .. code-block:: sh
 
@@ -187,7 +195,7 @@ Thème d'icone Captiva:
    dconf write /org/gnome/desktop/interface/icon-theme "'Captiva'"
 
 Firefox
-=======
+-------
 
 Thème Elementary: https://addons.mozilla.org/fr/firefox/addon/elementary-firefox/
 
@@ -209,7 +217,7 @@ de l'install des plugins (trois dernières lignes).
  
  
 Mis à jour des logiciels Gnome 3
-=================================
+--------------------------------
  
 Pour utiliser une version récente des logiciels Gnome, avec la header bar, il faut rajouter
 temporairement le dépot Gnome 3 Staging. 
@@ -225,7 +233,7 @@ temporairement le dépot Gnome 3 Staging.
 
 
 LibreOffice
-===========
+-----------
 
 .. code-block:: sh
    
