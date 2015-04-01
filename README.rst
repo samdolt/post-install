@@ -157,6 +157,12 @@ Afficher la liste des erreurs du correcteur de syntax:
 Gnome 3 / Fedora
 ================
 
+.. code-block:: bash
+
+   cd /usr/share/backgrounds/
+   sudo wget https://raw.githubusercontent.com/eustasy/elementary-Search/master/backgrounds/The%20Coast.jpg
+   cd && dconf write /org/gnome/desktop/background/picture-uri "'/usr/share/backgrounds/The Coast.jpg'"
+
 
 Elementary OS
 =============
