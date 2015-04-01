@@ -26,7 +26,7 @@ ou sur Fedora:
    sudo dnf install firefox vim-enhanced valac zsh \
                     git bzr git-flow curl cmake    \
                     gtk3-devel glib2-devel gcc \
-                    gcc-c++ \
+                    gcc-c++ python-devel \
 
 Console
 ========
