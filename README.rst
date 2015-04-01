@@ -37,7 +37,6 @@ Utilisation de Zsh avec les prompts de Oh My Zsh:
    cd ~/.oh-my-zsh/themes/
    wget https://raw.githubusercontent.com/samdolt/post-install/master/custom.zsh-theme
    cd $HOME
-   sed -i 's/robbyrussell/custom/' ~/.zshrc
 
 Ajout de la coloration syntactique
 
@@ -46,11 +45,14 @@ Ajout de la coloration syntactique
    cd ~/.oh-my-zsh/custom/plugins
    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
-Puis ajout :
+Finalisation :
 
-.. code-block:: text
+.. code-block:: bash
 
-   plugins=( git git-flow zsh-syntax-highlighting) # zsh-syntax-highlighting must be at the end
+   cd $HOME
+   rm .zshrc
+   wget https://raw.githubusercontent.com/samdolt/post-install/master/.zshrc
+   zsh
 
 
 Git
