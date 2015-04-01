@@ -17,6 +17,12 @@ Les indispensables
                     ubuntu-restricted-extras \
                     git-flow default-jre curl \
                     python-dev libclang1 cmake
+                    
+ou sur Fedora:
+
+.. code-block:: sh
+
+   sudo dnf install firefox vim-enhanced valac zsh git bzr git-flow curl cmake
 
 Console
 ========
