@@ -24,7 +24,7 @@ ou sur Fedora:
 .. code-block:: sh
 
    sudo dnf install firefox vim-enhanced valac zsh \
-                    git bzr git-flow curl cmake    \
+                    git bzr gitflow curl cmake    \
                     gtk3-devel glib2-devel gcc \
                     gcc-c++ python-devel \
 
