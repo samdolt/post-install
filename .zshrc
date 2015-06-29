@@ -78,5 +78,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+if [ -e /usr/bin/vimx ]; then alias vim='/usr/bin/vimx'; fi
 
 export TERM='xterm-256color'
