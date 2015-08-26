@@ -13,6 +13,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'phildawes/racer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
