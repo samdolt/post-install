@@ -145,6 +145,12 @@ set mouse=a
 ":let g:solarized_hitrail=(abs(g:solarized_hitrail-1)) | colorscheme solarized
 
 
+" Rust racer
+ set hidden
+ let g:racer_cmd = "/home/samuel/Sources/racer/target/release/racer"
+ let $RUST_SRC_PATH="/home/samuel/Sources/rustc-1.2.0/src/"
+
+
 
 " Correction de la syntaxe à l'ouverture
 let g:syntastic_check_on_open=1
