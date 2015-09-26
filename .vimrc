@@ -144,6 +144,10 @@ set mouse=a
 :set guioptions-=L " Left scroll bar
 ":let g:solarized_hitrail=(abs(g:solarized_hitrail-1)) | colorscheme solarized
 
+" Fix High DPI in windows GVim
+if has("win32")
+    set guifont=Consolas:h11
+endif
 
 " Rust racer
  set hidden
