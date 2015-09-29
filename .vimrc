@@ -125,6 +125,7 @@ else
     set clipboard=unnamedplus
 endif
 
+
 " Desactiver les touches directionnelles
 map <up> <nop>
 map <down> <nop>
@@ -164,3 +165,13 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_python_checkers = ['prospector']
 let g:syntastic_python_prospector_args = "--strictness veryhigh"
 let g:syntastic_rst_checkers = ['rstcheck']
+
+" Fix theme in cmder in windows
+if has('win32')
+    if has('gui_running')
+        let g:solarized_termcolors=256
+    else
+        let g:solarized_termcolors=16
+    endif
+endif
+colorscheme solarized
