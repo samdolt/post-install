@@ -9,7 +9,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
+if has('win32')
+   " Do nothing
+else
+    Plugin 'altercation/vim-colors-solarized'
+endif
+
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
@@ -165,13 +170,3 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_python_checkers = ['prospector']
 let g:syntastic_python_prospector_args = "--strictness veryhigh"
 let g:syntastic_rst_checkers = ['rstcheck']
-
-" Fix theme in cmder in windows
-if has('win32')
-    if has('gui_running')
-        let g:solarized_termcolors=256
-    else
-        let g:solarized_termcolors=16
-    endif
-endif
-colorscheme solarized
