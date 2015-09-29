@@ -17,3 +17,16 @@ Restart cmd.exe, with admin right
 choco install -y firefox vlc vim f.lux git
 choco install -y cmdermini -pre
 ```
+
+## Must-Have Software
+
+- Cmder ( Console cmd.exe and Powershell )
+- F.lux
+- Notepad++
+- Notepad2
+- Markdown Edit
+- Github
+- Git
+- Chocolatey
+- Firefox
+- VLC
