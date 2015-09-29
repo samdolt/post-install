@@ -9,12 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-if has('win32')
-   " Do nothing
-else
-    Plugin 'altercation/vim-colors-solarized'
-endif
-
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
@@ -110,7 +105,11 @@ filetype indent on " Load specific filetype indent information
 
 " Utilise la version sombre de Solarized
 set background=dark
-colorscheme solarized
+if has('win32')
+   " Do nothing
+else
+    colorscheme solarized
+endif
 
 " Change la police
 set guifont=Droid\ Sans\ Mono\ 10
