@@ -9,11 +9,21 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-scripts/vim-auto-save'
+
+
+
+
 Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'phildawes/racer'
+Plugin 'rust-lang/rust.vim'
+
+if has('win32') || has('win32unix')
+   " Do nothing
+else
+    Plugin 'altercation/vim-colors-solarized'
+	Plugin 'Valloric/YouCompleteMe'
+    Plugin 'vim-scripts/vim-auto-save'
+endif
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -105,8 +115,7 @@ filetype indent on " Load specific filetype indent information
 
 " Utilise la version sombre de Solarized
 set background=dark
-if has('win32')
-   " Do nothing
+if has('win32') || has('win32unix')
 else
     colorscheme solarized
 endif
@@ -123,7 +132,7 @@ set nobackup
 set noswapfile
 
 " Copier coller depuis le presse papier système
-if has("win32unix")
+if has('win32') || has('win32unix')
     set clipboard=unnamed
 else
     set clipboard=unnamedplus
@@ -150,7 +159,7 @@ set mouse=a
 ":let g:solarized_hitrail=(abs(g:solarized_hitrail-1)) | colorscheme solarized
 
 " Fix High DPI in windows GVim
-if has("win32")
+if has('win32') || has('win32unix')
     set guifont=Consolas:h11
 endif
 
