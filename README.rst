@@ -116,7 +116,7 @@ Vim
    vim +PluginInstall +qall
    
    cd ~/.vim/bundle/YouCompleteMe
-   ./install.sh --clang-completer
+   ./install.py --clang-completer --racer-completer
    cd
 
 Correction orthographique: http://blog.fedora-fr.org/metal3d/post/Correction-orthographique-et-grammaticale-avec-Vim
