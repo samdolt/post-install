@@ -254,5 +254,13 @@ Correction grammatical: https://www.languagetool.org/
 Dictionnaire français: http://extensions.libreoffice.org/extension-center/dictionnaires-francais
    
 
-   
+Dual Monitor set up
+-------------------
+
+Fix high dpi internal with low dpi external monitor
+
+.. code-block:: sh
+
+   xrandr --output DP2-2 --panning 3360x2100+2880+0
+   xrandr --output DP2-2 --scale 1.75x1.75
    
