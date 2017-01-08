@@ -272,3 +272,16 @@ Fix high dpi internal with low dpi external monitor
    xrandr --output DP2-2 --panning 3360x2100+2880+0
    xrandr --output DP2-2 --scale 1.75x1.75
    
+Optimus power save
+------------------
+
+
+   Using Ubuntu from now on, adding the below parameters to the booting lines
+   and configuring correctly the bumblebee.conf file, I have the correct
+   behaviour for bbswitch.
+
+   "acpi_osi=!Windows\x202013" acpi_osi=Linux nogpumanager
+   Hope it helps,
+   Jean.
+
+   
