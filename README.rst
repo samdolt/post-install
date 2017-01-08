@@ -281,6 +281,7 @@ Optimus power save
    behaviour for bbswitch.
 
    "acpi_osi=!Windows\x202013" acpi_osi=Linux nogpumanager
+   
    Hope it helps,
    Jean.
 
